@@ -5,9 +5,15 @@ import { v4 } from "uuid";
 import Title from "./components/Title";
 
 function App() {
-  const [tasks, setTasks] = useState(
-    JSON.parse(localStorage.getItem("tasks") || [])
-  );
+  const [tasks, setTasks] = useState(() => {
+    try {
+      const storedTasks = localStorage.getItem("tasks");
+      return storedTasks ? JSON.parse(storedTasks) : [];
+    } catch (error) {
+      console.error("Erro ao ler tasks do localStorage:", error);
+      return [];
+    }
+  });
 
   // recebe uma funcao e uma lista, todo momento em que a lista é atualizada/alterada executa a funcao
   useEffect(() => {
