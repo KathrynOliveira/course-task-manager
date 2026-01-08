@@ -1,8 +1,36 @@
-# React + Vite
+# 📝Gerenciador de Tarefas – React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Um Gerenciador de Tarefas simples desenvolvido com React, com foco em organização, produtividade e boas práticas de desenvolvimento frontend.
 
-Currently, two official plugins are available:
+## 📌 Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ✅ Adicionar novas tarefas
+- ✏️ Editar tarefas existentes
+- 🗑️ Remover tarefas
+- ✔️ Marcar tarefas como concluídas
+- 💾 Persistência de dados utilizando LocalStorage
+- 🎨 Interface simples e responsiva
+
+## 🚀 Tecnologias Utilizadas
+
+- ⚛️ React
+- 🧠 React Hooks (useState, useEffect)
+- 💾 LocalStorage
+- 🎨 Tailwind
+
+## 📁 Como usar
+
+1. Clone o repositório:
+     ```bash
+   git clone https://github.com/KathrynOliveira/course-task-manager.git
+
+2. Acesse a pasta do projeto
+     ```bash
+     cd course-task-manager
+3. Instale as dependências
+    ```bash
+    npm install
+
+## 👨‍💻 Desenvolvidor por
+
+- [Kathryn Oliveira](https://github.com/KathrynOliveira)
